@@ -17,7 +17,7 @@ You may also see any lint errors in the console.
 - C> React statements can only have one root element. We can have nested though
 - D> Props: Data passing to component by adding an attribute
 - E> Composition(children props): Compose components by using wrappers, built-in HTML elements or other attributes to build the overall UI> Offers: Extract code duplication
-- Old REACT scripts needed to import the React package. \
+- F> Old REACT scripts needed to import the React package. \
 An equilevant non-JSX React function would be like: \
   return React.createElement( \
     "div", \
@@ -26,8 +26,5 @@ An equilevant non-JSX React function would be like: \
     React.createElement(Expenses, {items: expenses}) \
   ); \
 INSTEAD OF \
-  return (
-    < div>
-      < Expenses items={expenses} />
-    < /div>
-  );
+  return (< div> < Expenses items={expenses} />< /div> );
+
