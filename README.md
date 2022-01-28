@@ -27,4 +27,7 @@ An equilevant non-JSX React function would be like: \
   ); \
 INSTEAD OF \
   return (< div> < Expenses items={expenses} />< /div> );
+- G> REACT calls every uncalled Component until there's no more component code to be executed. BUT IT NEVER REPEATS THAT.\ Resolution> State
+- H> State (function named useState) is a Hook called inside a function (as almost every hook) that wants a default state value and returns the default value able to be modified and a function which we can then call to assign a new value to that variable. The corresponding component function is executed again and the variable is re-evaluated.
 
+Stopped tutorial at 4.50 (to watch)
