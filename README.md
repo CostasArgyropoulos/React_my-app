@@ -27,7 +27,7 @@ An equilevant non-JSX React function would be like: \
   ); \
 INSTEAD OF \
   return (
-    <div>
-      <Expenses items={expenses} />
-    </div>
+    < div>
+      < Expenses items={expenses} />
+    < /div>
   );
