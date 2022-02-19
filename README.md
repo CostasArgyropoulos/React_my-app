@@ -30,5 +30,7 @@ INSTEAD OF \
 - G> REACT calls every uncalled Component until there's no more component code to be executed. BUT IT NEVER REPEATS THAT.\ Resolution> State
 - H> State (function named useState) is a Hook called inside a function (as almost every hook) that wants a default state value and returns the default value able to be modified and a function which we can then call to assign a new value to that variable. The corresponding component function is executed again and the variable is re-evaluated. State is separated on a per component instance basis. Use State's initial value is only evaluated in the first execution.
 - I> Get user's input: onChange hook and function with 'event' parameter. event.target.value will hold the entered value
+- J> When we want to transfer data between components with no clear connection between them, we utilize the closest component with direct or indirect access to these components. (app -> [expenses <---X---> newexpense]). \
+Process called "Lifting the state up" (for NewExpense component) and "Passing the state via props" (for Expense component)
 
 Stopped tutorial at 4.50 (to watch)
