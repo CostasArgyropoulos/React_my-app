@@ -32,7 +32,7 @@ INSTEAD OF \
 - I> Get user's input: onChange prop and function with 'event' parameter. event.target.value will hold the entered value
 - J> When we want to transfer data between components with no clear connection between them, we utilize the closest component with direct or indirect access to these components. (app -> [expenses <---X---> newexpense]). \
 Process called "Lifting the state up" (for NewExpense component) and "Passing the state via props" (for Expense component)
--K> Controlled component: Change not handled by the component it's defined, but from a parent component.
+- K> Controlled component: Change not handled by the component it's defined, but from a parent component.
 
 
 Stopped tutorial at 6.74 (to watch)
