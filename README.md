@@ -34,5 +34,8 @@ INSTEAD OF \
 Process called "Lifting the state up" (for NewExpense component) and "Passing the state via props" (for Expense component)
 - K> Controlled component: Change not handled by the component it's defined, but from a parent component.
 
+- Back ticks (``) to inject dynamically added classes: <div className={`form-control ${!isValid ? 'invalid' : ''}`}>
+- Styled Components: Pachages that help you build components with styles attached just to these components
+- You can import styled from 'styled-components'; const Button = styled.button`` <- ``: anything inside will end up in the button method
 
-Stopped tutorial at 6.74 (to watch)
+Stopped tutorial at 6.78 (to watch)
