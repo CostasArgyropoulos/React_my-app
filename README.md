@@ -32,10 +32,17 @@ INSTEAD OF \
 - I> Get user's input: onChange prop and function with 'event' parameter. event.target.value will hold the entered value
 - J> When we want to transfer data between components with no clear connection between them, we utilize the closest component with direct or indirect access to these components. (app -> [expenses <---X---> newexpense]). \
 Process called "Lifting the state up" (for NewExpense component) and "Passing the state via props" (for Expense component)
-- K> Controlled component: Change not handled by the component it's defined, but from a parent component.
+- K> Controlled component: Change not handled by the component it's defined, but from a parent component. Specifically, the internal state is controlled by React.
+- L> {props.children} used at the target function will give us the content passed from the parent function closing tags
+- M> If we want to avoid return <div>'s with nested functionalities, an elegant workaround is to create a helper component (wrapper) which will just return props.children and that way everything nested inside that jsx return statement will be returned as if it was a div. Alternativelly, we could use <React.Fragment> as a wrapper which is an equilevant wrapper.
+- N> Refs(useRef hook): They allow us to get access to other DOM elements and work with them. They can basically replace useState in cases where we just need to read a value and don't need to change anything.
+- O> Accessing values by ref => Uncontrolled component. Their internal state (the value reflected in them) is not controlled by React.
+- P> Side Effects: Anything outside basic React functionalities(render ui, hooks,props, etc), like storing data in Browser, send http requests to backend servers, set and manage timers. Works by useEffect hool, whose fuction is executed after every component evaluation if the specified dependencies have changed. Added dependencies are what we use in the side effect function.
+- Q> useReducer: Hook used as a replacement of useState, in cases where there are multiple states or dependencies to other states(related data). It provides a more powerfull state management. Form: const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); useState is the main state management tool.
+ 
 
 - Back ticks (``) to inject dynamically added classes: <div className={`form-control ${!isValid ? 'invalid' : ''}`}>
 - Styled Components: Pachages that help you build components with styles attached just to these components
 - You can import styled from 'styled-components'; const Button = styled.button`` <- ``: anything inside will end up in the button method
 
-Stopped tutorial at 6.78 (to watch)
+Stopped tutorial at 9.121 (to watch)
