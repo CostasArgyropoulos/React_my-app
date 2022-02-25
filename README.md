@@ -39,10 +39,11 @@ Process called "Lifting the state up" (for NewExpense component) and "Passing th
 - O> Accessing values by ref => Uncontrolled component. Their internal state (the value reflected in them) is not controlled by React.
 - P> Side Effects: Anything outside basic React functionalities(render ui, hooks,props, etc), like storing data in Browser, send http requests to backend servers, set and manage timers. Works by useEffect hool, whose fuction is executed after every component evaluation if the specified dependencies have changed. Added dependencies are what we use in the side effect function.
 - Q> useReducer: Hook used as a replacement of useState, in cases where there are multiple states or dependencies to other states(related data). It provides a more powerfull state management. Form: const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); useState is the main state management tool.
- 
+ - R> useContext: When passing many data via props and especially when we pass them through components just to forward them to the next level(compoent). To utilize useContext, you first need to create one and provide it from a point where is your root to context navigation. Not optimal for high frequency changes. There's Redux for that.
+ - O> With useImperativeHandle and React.forwardRef you can expose functionalities from a React component to its parent component, and use the component in the parent component through Refs and trigger certain functionalities.
 
 - Back ticks (``) to inject dynamically added classes: <div className={`form-control ${!isValid ? 'invalid' : ''}`}>
 - Styled Components: Pachages that help you build components with styles attached just to these components
 - You can import styled from 'styled-components'; const Button = styled.button`` <- ``: anything inside will end up in the button method
 
-Stopped tutorial at 9.121 (to watch)
+Stopped tutorial at 9.132 (to watch)
